@@ -1,6 +1,8 @@
 print("----Welcome to Vansh Bank----")
 print("")
 
+manager_id = "2902conda"
+
 customers = []
 manager = []
 
@@ -89,6 +91,7 @@ while True:
 
             log_in_user_name = input("enter your user name : ")
             log_in_pass = input("enter your pass : ")
+            manager_id_log = input("enter manager id :")
 
             logged_in_customer = None
 
@@ -101,7 +104,7 @@ while True:
                     logged_in_customer = customer
                     break
 
-            if logged_in_customer is not None:
+            if logged_in_customer is not None and manager_id_log == manager_id:
                 print("log in successful")
                 break
             else:
