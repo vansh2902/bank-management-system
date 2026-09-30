@@ -60,7 +60,6 @@ Create a customer account before logging in. To try a transfer, create two custo
 
 - All records exist only in memory and are lost when the program closes.
 - Passwords are stored as plain text in memory, and password input is visible in the terminal. Use only made-up demo details.
-- Anyone can register as a manager; there is no restricted administrator approval.
 - Non-numeric menu or amount inputs can stop the program.
 - Amounts use floating-point numbers rather than a precise money representation.
 - This is a CLI simulation with no database, real payment processing, or bank integration.
