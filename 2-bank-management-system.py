@@ -91,7 +91,7 @@ while True:
 
             log_in_user_name = input("enter your user name : ")
             log_in_pass = input("enter your pass : ")
-            manager_id_log = input("enter manager id :")
+           
 
             logged_in_customer = None
 
@@ -104,7 +104,7 @@ while True:
                     logged_in_customer = customer
                     break
 
-            if logged_in_customer is not None and manager_id_log == manager_id:
+            if logged_in_customer is not None :
                 print("log in successful")
                 break
             else:
@@ -275,12 +275,13 @@ while True:
             while True:
 
                 manager_user_name = input("enter user name : ")
+                manager_id_log = input("enter manager id :")
 
                 manager_exists = False
 
                 for manager_dict in manager:
 
-                    if manager_user_name == manager_dict["manager user name"]:
+                    if manager_user_name == manager_dict["manager user name"] and manager_id_log == manager_id:
                         manager_exists = True
                         break
 
